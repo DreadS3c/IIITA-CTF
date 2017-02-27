@@ -45,6 +45,8 @@ int main()
 	int pin,ctr=0,rem;
 	printf("Enter the secret pin\n");
 	scanf("%d",&pin);
+	if ( pin>=10000 || pin<=999)
+		return;
 	rem = pin%10;
 	if(rem!=7)
 		ctr=1;
